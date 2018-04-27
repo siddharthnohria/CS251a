@@ -15,8 +15,7 @@ func()
 	done
 	
 	
-  elif [[ -f "$1" ]] ;
-  	then
+  elif [[ -f "$1" ]] ; 	then
   		
   	str=$(awk -f 1.awk $f)
   	temp=$(echo $str | cut -d ":" -f 1)
